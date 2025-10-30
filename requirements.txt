@@ -1,0 +1,13 @@
+# Core AI and API libraries
+google-generativeai==0.5.4
+requests==2.32.3
+Pillow==10.4.0
+
+# Google Workspace integration (for batch mode)
+google-api-python-client==2.136.0
+google-auth-httplib2==0.2.0
+google-auth-oauthlib==1.2.0
+
+# Utilities
+python-dotenv==1.0.1
+tqdm==4.66.4

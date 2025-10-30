@@ -1,0 +1,5 @@
+{
+  "name": "Copy of Kịch bản video v1 (chuẩn)",
+  "description": "An application to generate professional video scripts in JSON format for the Veo AI video generator, based on user ideas, content, and reference images.",
+  "requestFramePermissions": []
+}

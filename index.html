@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KỊCH BẢN VIDEO THẦN THÁNH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --color-brand-bg: 249 250 251; /* gray-50 */
+        --color-surface: 255 255 255; /* white */
+        --color-primary: 59 130 246; /* blue-500 */
+        --color-primary-hover: 37 99 235; /* blue-600 */
+        --color-text-main: 17 24 39; /* gray-900 */
+        --color-text-secondary: 107 114 128; /* gray-500 */
+        --color-border-color: 209 213 219; /* gray-300 */
+        
+        /* Semantic Colors */
+        --color-success: 16 185 129;  /* emerald-500 */
+        --color-success-hover: 5 150 105; /* emerald-600 */
+        --color-error: 239 68 68;    /* red-500 */
+        --color-error-hover: 220 38 38; /* red-600 */
+        --color-warning: 245 158 11; /* amber-500 */
+        --color-warning-hover: 217 119 6; /* amber-600 */
+      }
+      html.dark {
+        --color-brand-bg: 17 24 39; /* gray-900 */
+        --color-surface: 31 41 55; /* gray-800 */
+        --color-primary: 96 165 250; /* blue-400 */
+        --color-primary-hover: 59 130 246; /* blue-500 */
+        --color-text-main: 243 244 246; /* gray-100 */
+        --color-text-secondary: 156 163 175; /* gray-400 */
+        --color-border-color: 55 65 81; /* gray-700 */
+        
+        /* Semantic Colors */
+        --color-success: 16 185 129;  /* emerald-500 */
+        --color-success-hover: 52 211 153; /* emerald-400 */
+        --color-error: 248 113 113;    /* red-400 */
+        --color-error-hover: 252 165 165; /* red-300 */
+        --color-warning: 252 211 77;   /* amber-300 */
+        --color-warning-hover: 253 224 71; /* amber-200 */
+      }
+      /* Custom scrollbar for dark mode for a better UX */
+      html.dark ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      html.dark ::-webkit-scrollbar-track {
+        background: rgb(var(--color-surface));
+      }
+      html.dark ::-webkit-scrollbar-thumb {
+        background-color: #4b5563; /* gray-600 */
+        border-radius: 4px;
+        border: 2px solid rgb(var(--color-surface));
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'brand-bg': 'rgb(var(--color-brand-bg) / <alpha-value>)',
+              'surface': 'rgb(var(--color-surface) / <alpha-value>)',
+              'primary': 'rgb(var(--color-primary) / <alpha-value>)',
+              'primary-hover': 'rgb(var(--color-primary-hover) / <alpha-value>)',
+              'text-main': 'rgb(var(--color-text-main) / <alpha-value>)',
+              'text-secondary': 'rgb(var(--color-text-secondary) / <alpha-value>)',
+              'border-color': 'rgb(var(--color-border-color) / <alpha-value>)',
+              'success': 'rgb(var(--color-success) / <alpha-value>)',
+              'success-hover': 'rgb(var(--color-success-hover) / <alpha-value>)',
+              'error': 'rgb(var(--color-error) / <alpha-value>)',
+              'error-hover': 'rgb(var(--color-error-hover) / <alpha-value>)',
+              'warning': 'rgb(var(--color-warning) / <alpha-value>)',
+              'warning-hover': 'rgb(var(--color-warning-hover) / <alpha-value>)',
+            },
+            ringColor: {
+              'primary': 'rgb(var(--color-primary))',
+            }
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.22.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "jszip": "https://esm.sh/jszip@3.10.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-brand-bg text-text-main">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
